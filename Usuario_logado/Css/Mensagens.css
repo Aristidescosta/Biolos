@@ -1,0 +1,328 @@
+.Aria_total_sms{
+    display: flex;
+}
+.Aria_total_sms .Aria_sms_left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Aria_total_sms .Aria_sms_left > form{
+    width: 90%;
+    margin: 40px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all .2s;
+    box-shadow: 0px 4px 16px rgb( 0, 0, 0, 0.2);
+    background: white;
+    border-radius: 50px;
+
+}
+.Aria_total_sms .Aria_sms_left > form i{
+    color: #3e3e3e;
+}
+.Aria_total_sms .Aria_sms_left > form input{
+    width: 80%;
+    border: none;
+    outline: none;
+    color: #3e3e3e;
+    padding: 15px 0px;
+    background: white;
+}
+.Aria_total_sms .Aria_sms_left form:hover{
+    transform: scale(1.02);
+}
+
+
+.Aria_total_sms .Aria_sms_left ul{
+    list-style: none;
+    width: 90%;
+    margin-top: 10px;
+}
+.Aria_total_sms .Aria_sms_left ul li{
+    display: flex;
+    padding: 15px;
+    background: white;
+    box-shadow: 0px 4px 16px rgb( 0, 0, 0, 0.06);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: .2s;
+}
+.Aria_total_sms .Aria_sms_left ul li:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 4px 16px rgb( 0, 0, 0, 0.2);
+}
+.Aria_total_sms .Aria_sms_left ul li .caixa_img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 9px;
+    border: 2px solid #ea1d;
+    padding: 2px;
+}
+.Aria_total_sms .Aria_sms_left ul li .caixa_img a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Aria_total_sms .Aria_sms_left ul li .local_mensagem{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.Aria_total_sms .Aria_sms_left ul li .local_mensagem .local_mensagem_top{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.Aria_total_sms .Aria_sms_left ul li .local_mensagem .local_mensagem_top > small{
+    color: #ea1d;
+    font-size: 11px;
+}
+.Aria_total_sms .Aria_sms_left ul li .local_mensagem .local_mensagem_top strong a{
+    text-decoration: none;
+    color: #3e3e3e;
+    font-size: 17px;
+}
+.Aria_total_sms .Aria_sms_left ul li .local_mensagem small p{
+    color: #3e3e3e;
+}
+.Aria_total_sms .Aria_sms_left ul li .local_mensagem .btn_Abrir_local_sms{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+.Aria_total_sms .Aria_sms_left ul li .local_mensagem .btn_Abrir_local_sms button{
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    outline: none;
+    margin: 0px 7px;
+}
+.Aria_total_sms .Aria_sms_left ul li .local_mensagem .btn_Abrir_local_sms button:hover{
+    background: #ea1;
+    color: white;
+}
+.Aria_total_sms .Aria_sms_left .Mais_sms{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 15px;
+}
+.Aria_total_sms .Aria_sms_left .Mais_sms button{
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+    color: #3e3e3e;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+.Aria_total_sms .Aria_sms_left .Mais_sms button:hover{
+    transform: scale(1.04);
+    background: #3e3e3e;
+    color: white;
+    box-shadow: 0px 4px 16px rgb( 0, 0, 0, 0.04);
+}
+.Aria_total_sms .Aria_sms_right{
+    width: 55%;
+    height: 89vh;
+    position: fixed;
+    left: 45%;
+    background: white;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: white url(../../Imagens/Capas/fundo\ da\ aria\ de\ mensagens.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateX( 100%);
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_head{
+    width: 100%;
+    height: 75px;
+    background: #3e3e3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Aria_sms_right .caixa_de_chat .caixa_de_chat_head .Local_img_e_nome{
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+.Aria_sms_right .caixa_de_chat .caixa_de_chat_head .Local_img_e_nome .caixa_img_da_pessoa{
+    width: 55px;
+    height: 55px;
+    border: 2px solid #ea1;
+    padding: 2px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+.Aria_sms_right .caixa_de_chat .caixa_de_chat_head .Local_img_e_nome .caixa_img_da_pessoa img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Aria_sms_right .caixa_de_chat .caixa_de_chat_head .Local_img_e_nome .caixa_de_nome_estado{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Aria_sms_right .caixa_de_chat .caixa_de_chat_head .Local_img_e_nome .caixa_de_nome_estado strong{
+    color: white;
+}
+.Aria_sms_right .caixa_de_chat .caixa_de_chat_head .Local_img_e_nome .caixa_de_nome_estado small{
+    color: #ea1;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_head ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_head ul li{
+    margin: 0px 15px;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_head ul li button{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 1.2rem;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_head ul li:last-child button{
+    font-size: 0.9rem;
+}
+
+
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_body{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_body ul{
+    width: 90%;
+    height: 95%;
+    list-style: none;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_body ul li{
+    width: 100%;
+    padding: 15px 0px;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_body ul .Sua_sms{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_body ul .Minha_sms{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_body ul li .a_mensagem{
+    max-width: 270px;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: 0px 4px 16px rgb( 0, 0, 0, 0.2);
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_body ul .Sua_sms .a_mensagem{
+    background: #3e3e3e;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_body ul .Minha_sms .a_mensagem{
+    background: #ea1;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_body ul li .a_mensagem p{
+    margin: 0px auto;
+    color: white;
+    padding: 5px 20px;
+
+}
+
+
+
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_foot{
+    width: 100%;
+    height: 85px;
+    background: #3e3e3e;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 27px;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_foot > button{
+    border: none;
+    outline: none;
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+    color: #3e3e3e;
+    background: white;
+    border-radius: 50%;
+    margin-left: 15px;
+    transition: all .2s;
+
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_foot > button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background: #ea1;
+    color: white;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_foot form{
+    width: 78%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    border-radius: 50px;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_foot form textarea{
+    width: 55%;
+    border: none;
+    outline: none;
+    padding: 15px 5px;
+    background: white;
+    color: #3e3e3e;
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_foot form button{
+    width: 46px;
+    height: 46px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    color: #3e3e3e;
+    background: transparent;
+    border-radius: 50%;
+    transition: all .2s;
+
+}
+.Aria_total_sms .Aria_sms_right .caixa_de_chat .caixa_de_chat_foot form button:hover{
+    background: #3e3e3e;
+    color: white;
+    cursor: pointer;
+}

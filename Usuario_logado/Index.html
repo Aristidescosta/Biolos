@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Plataforma biolos</title>
+    <link rel="stylesheet" href="Css/Home.css">
+    <link rel="stylesheet" href="../Css/main.css">
+    <link rel="stylesheet" href="../Icones/bootstrap-icons.css">
+    <script src="../Js/appUsuarioLogado.js"></script>
+</head>
+<body onload="carregarDadosUsuario()">
+    <header>
+        <h1>
+            <span>B</span>iolos
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <button onclick="Abrir_Local_de_pesquisa_geral( '#Sombras_Janelas_pesquisa_geral' , '.Local_de_pesquisa_geral')">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-cart-check-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <button id="mensagens">
+                        <i class="bi bi-chat-left-text-fill"></i>
+                    </button>
+                    <div id="sms_dropdown" class="caixa_de_sms_basica">
+                        <div class="header_dropdown">
+                            <span>Tens 4 mensagens novas !</span>
+                        </div>
+                        <div class="list_news">
+                            <ul>
+                                <li>
+                                    <div class="caixa_img_sms">
+                                        <img src="../Imagens/Imagens_de_pessoas/Img_usuarios/usuario_01.jpg" alt="">
+                                    </div>
+                                    <div class="caixa_text_sms">
+                                        <strong>Ivanildo Correia</strong>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur...
+                                        </p>
+                                        <small>há 2min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="caixa_img_sms">
+                                        <img src="../Imagens/Imagens_de_pessoas/Img_usuarios/usuario_02.jpg" alt="">
+                                    </div>
+                                    <div class="caixa_text_sms">
+                                        <strong>Domingos matumona</strong>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur...
+                                        </p>
+                                        <small>há 4min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="caixa_img_sms">
+                                        <img src="../Imagens/Imagens_de_pessoas/Img_usuarios/usuario_03.jpg" alt="">
+                                    </div>
+                                    <div class="caixa_text_sms">
+                                        <strong>Gerson paulo</strong>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur...
+                                        </p>
+                                        <small>há 6min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="caixa_img_sms">
+                                        <img src="../Imagens/Imagens_de_pessoas/Img_usuarios/usuario_04.jpg" alt="">
+                                    </div>
+                                    <div class="caixa_text_sms">
+                                        <strong>Juliana Soba</strong>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur...
+                                        </p>
+                                        <small>há 8min</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_dropdown">
+                            <a href="#">Ver mais mensagens</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button id="news">
+                        <i class="bi bi-bell-fill"></i>
+                    </button>
+                    <div id="news_dropdown" class="caixa_de_news_basica">
+                        <div class="header_dropdown">
+                            <span>Tens 4 notificações novas !</span>
+                        </div>
+                        <div class="list_news">
+                            <ul>
+                                <li>
+                                    <i class="bi bi-check2-circle"></i>
+                                    <div class="caixa_conteudo">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                        </p>
+                                        <small>há 2 min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="bi bi-envelope"></i>
+                                    <div class="caixa_conteudo">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                        </p>
+                                        <small>há 2 min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="bi bi-lock"></i>
+                                    <div class="caixa_conteudo">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                        </p>
+                                        <small>há 2 min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="bi bi-info-circle"></i>
+                                    <div class="caixa_conteudo">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                        </p>
+                                        <small>há 2 min</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_dropdown">
+                            <a href="#">Ver mais notificações</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="perfil">
+                    <div class="dados_perfil_header">
+                        <div class="caixa_img_perfil">
+                            <img src="" class="fotoPerfilUsuario" alt=" foto de perfil">
+                        </div>
+                        <strong id="abrir_menu_perfil_por_nome">
+                            <span class="nomeUsuario"></span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </strong>
+                    </div>
+                    <div id="perfil_dropdown" class="caixa_de_perfil_basica">
+                        <div class="header_dropdown">
+                            <strong>
+                                <span class="nomeUsuario"></span> <span class="apelidoUsuario"></span>
+                            </strong>
+                            <small class="emailUsuario"></small>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="Perfil.html">
+                                    <i class="bi bi-person"></i>
+                                    <span>Minha conta</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-gear"></i>
+                                    <span>Configurar conta</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-question-circle"></i>
+                                    <span>Ajuda</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-box-arrow-in-right"></i>
+                                    <span>Terminar sessão</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="All">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="efeito"> 
+                        <a href="Index.html" >
+                            <i class="bi bi-house-fill"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#" >
+                            <i class="bi bi-people-fill"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#">
+                            <i class="bi bi-plus-circle"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#" >
+                            <i class="bi bi-bar-chart-line-fill"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#" >
+                            <i class="bi bi-gear-fill"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#" >
+                            <i class="bi bi-question-circle-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <div class="Biolos_recent">
+                <div class="Biolos_recent_header">
+                    <div class="Biolos_recent_header_text">
+                        <strong><span>Negócios</span> recentes</strong>
+                        <small>
+                            Details to details is what makes Hexashop different from the other themes.
+                        </small>
+                    </div>
+                    <nav>
+                        <button><span>Categorias</span> <i class="bi bi-caret-down-fill"></i></button>
+                        <div class="lista_categorias">
+                            <div class="lista_categorias_head">
+                                <strong><span>Altera</span> categoria</strong>
+                            </div>
+                            <div class="lista_categorias_body">
+                                <ul>
+                                    <li>
+                                        <strong>Eletrônicos</strong>
+                                        <p>Aparelhos</p>
+                                        <p>Computadores</p>
+                                        <p>Telefones</p>
+                                    </li>
+                                    <li>
+                                        <strong>Hobbies</strong>
+                                        <p>Bicicletas</p>
+                                        <p>Artes e artenasato</p>
+                                        <p>Peças automoveis</p>
+                                        <p>Peças de telefones</p>
+                                        <p>Peças de computadores</p>
+                                        <p>Instrumentos musicais</p>
+                                    </li>
+                                    <li>
+                                        <strong>Roupas e acessórios</strong>
+                                        <p>Bolsas e malas</p>
+                                        <p>Roupas e calçados femininos</p>
+                                        <p>Roupas e sapatos masculinos</p>
+                                        <p>Joias e acessórios</p>
+                                    </li>
+                                    <li>
+                                        <strong>Casa e jardim</strong>
+                                        <p>Ferramentas</p>
+                                        <p>Móveis</p>
+                                        <p>Utilidades domésticas</p>
+                                        <p>Jardim</p>
+                                    </li>
+                                    <li>
+                                        <strong>Entretenimento</strong>
+                                        <p>Videogames</p>
+                                        <p>Livros</p>
+                                        <p>Filmes</p>
+                                        <p>Músicas</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>  
+                
+                <div class="Biolos_recent_body">
+                    <ul>
+                        <li>
+                            <div class="aria_img_negocio">
+                                <img src="../Imagens/Img de pessoas/imagens de seguidores/Matumona/Imagens_de_negocio/publi 01.jpg" alt="" class="img_para_abrir_01">
+                                <div class="icones_img_negocios">
+                                    <button class="btn_icones" onclick="Abiri_imgs_negocios( '.img_para_abrir_01' ,'.jnl_imgs_negocios' )"><i class="bi bi-arrows-angle-expand"></i></button>
+                                    <a href="Detalhes.html"><i class="bi bi-eye-fill"></i></a>
+                                    <button class="btn_icones"><i class="bi bi-star-fill"></i></button>
+                                </div>
+                            </div>
+                            <div class="aria_conteudo_negocio">
+                                <div class="aria_conteudo_negocio_header">
+                                    <p><a href="#">Domingos Matumona</a></p>
+                                    <strong><span>Lorem</span> ipsum dolor </strong>
+                                </div>
+                                <div class="aria_conteudo_negocio_body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos earum maxime.
+                                    </p>
+                                    <div class="estrelas">
+                                        <div class="classicica">
+                                            <span>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="aria_conteudo_negocio_footer">
+                                    <strong><span>Kz</span>190 000</strong>
+                                    <button>Fechar Biolo</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="aria_img_negocio">
+                                <img src="../Imagens/Img de pessoas/imagens de seguidores/Juliana soba/Imagens_de_negocio/publi 07.jpg" alt="" class="img_para_abrir_02">
+                                <div class="icones_img_negocios">
+                                    <button class="btn_icones" onclick="Abiri_imgs_negocios( '.img_para_abrir_02' ,'.jnl_imgs_negocios' )"><i class="bi bi-arrows-angle-expand"></i></button>
+                                    <a href="Detalhes.html"><i class="bi bi-eye-fill"></i></a>
+                                    <button class="btn_icones"><i class="bi bi-star-fill"></i></button>
+                                </div>
+                            </div>
+                            <div class="aria_conteudo_negocio">
+                                <div class="aria_conteudo_negocio_header">
+                                    <p><a href="#">Juliana soba</a></p>
+                                    <strong><span>Lorem</span> ipsum dolor </strong>
+                                </div>
+                                <div class="aria_conteudo_negocio_body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos earum maxime.
+                                    </p>
+                                    <div class="estrelas">
+                                        <div class="classicica">
+                                            <span>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="aria_conteudo_negocio_footer">
+                                    <strong><span>Kz</span>16 000</strong>
+                                    <button>Fechar Biolo</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="aria_img_negocio">
+                                <img src="../Imagens/Img de pessoas/imagens de seguidores/Ivanildo/Imagens_de_negocio/publi 04.jpg" alt="" class="img_para_abrir_03">
+                                <div class="icones_img_negocios">
+                                    <button class="btn_icones" onclick="Abiri_imgs_negocios( '.img_para_abrir_03' ,'.jnl_imgs_negocios' )"><i class="bi bi-arrows-angle-expand"></i></button>
+                                    <a href="Detalhes.html"><i class="bi bi-eye-fill"></i></a>
+                                    <button class="btn_icones"><i class="bi bi-star-fill"></i></button>
+                                </div>
+                            </div>
+                            <div class="aria_conteudo_negocio">
+                                <div class="aria_conteudo_negocio_header">
+                                    <p><a href="#">Ivanildo correia</a></p>
+                                    <strong><span>Lorem</span> ipsum dolor </strong>
+                                </div>
+                                <div class="aria_conteudo_negocio_body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos earum maxime.
+                                    </p>
+                                    <div class="estrelas">
+                                        <div class="classicica">
+                                            <span>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="aria_conteudo_negocio_footer">
+                                    <strong><span>Kz</span>96 000</strong>
+                                    <button>Fechar Biolo</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="aria_img_negocio">
+                                <img src="../Imagens/Img de pessoas/imagens de seguidores/Alcina/Imagens_de_negocio/publi 01.jpg" alt="" class="img_para_abrir_04">
+                                <div class="icones_img_negocios">
+                                    <button class="btn_icones" onclick="Abiri_imgs_negocios( '.img_para_abrir_04' ,'.jnl_imgs_negocios' )"><i class="bi bi-arrows-angle-expand"></i></button>
+                                    <a href="Detalhes.html"><i class="bi bi-eye-fill"></i></a>
+                                    <button class="btn_icones"><i class="bi bi-star-fill"></i></button>
+                                </div>
+                            </div>
+                            <div class="aria_conteudo_negocio">
+                                <div class="aria_conteudo_negocio_header">
+                                    <p><a href="#">Alcina paquete</a></p>
+                                    <strong><span>Lorem</span> ipsum dolor </strong>
+                                </div>
+                                <div class="aria_conteudo_negocio_body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos earum maxime.
+                                    </p>
+                                    <div class="estrelas">
+                                        <div class="classicica">
+                                            <span>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="aria_conteudo_negocio_footer">
+                                    <strong><span>Kz</span>10 000</strong>
+                                    <button>Fechar Biolo</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="aria_img_negocio">
+                                <img src="../Imagens/Img de pessoas/imagens de seguidores/Fabio junik/Imagens_de_negocio/publi 01.jpg" alt="" class="img_para_abrir_05">
+                                <div class="icones_img_negocios">
+                                    <button class="btn_icones" onclick="Abiri_imgs_negocios( '.img_para_abrir_05' ,'.jnl_imgs_negocios' )"><i class="bi bi-arrows-angle-expand"></i></button>
+                                    <a href="Detalhes.html"><i class="bi bi-eye-fill"></i></a>
+                                    <button class="btn_icones"><i class="bi bi-star-fill"></i></button>
+                                </div>
+                            </div>
+                            <div class="aria_conteudo_negocio">
+                                <div class="aria_conteudo_negocio_header">
+                                    <p><a href="#">Fabio junic</a></p>
+                                    <strong><span>Lorem</span> ipsum dolor </strong>
+                                </div>
+                                <div class="aria_conteudo_negocio_body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos earum maxime.
+                                    </p>
+                                    <div class="estrelas">
+                                        <div class="classicica">
+                                            <span>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="aria_conteudo_negocio_footer">
+                                    <strong><span>Kz</span>8 000</strong>
+                                    <button>Fechar Biolo</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="aria_img_negocio">
+                                <img src="../Imagens/Img de pessoas/imagens de seguidores/Garcia Mbuxi/Imagens_de_negocio/house1.jpg" alt="" class="img_para_abrir_06">
+                                <div class="icones_img_negocios">
+                                    <button class="btn_icones" onclick="Abiri_imgs_negocios( '.img_para_abrir_06' ,'.jnl_imgs_negocios' )"><i class="bi bi-arrows-angle-expand"></i></button>
+                                    <a href="Detalhes.html"><i class="bi bi-eye-fill"></i></a>
+                                    <button class="btn_icones"><i class="bi bi-star-fill"></i></button>
+                                </div>
+                            </div>
+                            <div class="aria_conteudo_negocio">
+                                <div class="aria_conteudo_negocio_header">
+                                    <p><a href="#">Garcia Mbuxi</a></p>
+                                    <strong><span>Lorem</span> ipsum dolor </strong>
+                                </div>
+                                <div class="aria_conteudo_negocio_body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos earum maxime.
+                                    </p>
+                                    <div class="estrelas">
+                                        <div class="classicica">
+                                            <span>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="aria_conteudo_negocio_footer">
+                                    <strong><span>Kz</span>3 000 000</strong>
+                                    <button>Fechar Biolo</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="aria_img_negocio">
+                                <img src="../Imagens/Img de pessoas/imagens de seguidores/Matumona/Imagens_de_negocio/publi 03.jpg" alt="" class="img_para_abrir_07">
+                                <div class="icones_img_negocios">
+                                    <button class="btn_icones" onclick="Abiri_imgs_negocios( '.img_para_abrir_07' ,'.jnl_imgs_negocios' )"><i class="bi bi-arrows-angle-expand"></i></button>
+                                    <a href="Detalhes.html"><i class="bi bi-eye-fill"></i></a>
+                                    <button class="btn_icones"><i class="bi bi-star-fill"></i></button>
+                                </div>
+                            </div>
+                            <div class="aria_conteudo_negocio">
+                                <div class="aria_conteudo_negocio_header">
+                                    <p><a href="#">Domingos Matumona</a></p>
+                                    <strong><span>Lorem</span> ipsum dolor </strong>
+                                </div>
+                                <div class="aria_conteudo_negocio_body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos earum maxime.
+                                    </p>
+                                    <div class="estrelas">
+                                        <div class="classicica">
+                                            <span>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="aria_conteudo_negocio_footer">
+                                    <strong><span>Kz</span>200 000</strong>
+                                    <button>Fechar Biolo</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="aria_img_negocio">
+                                <img src="../Imagens/Img de pessoas/imagens de seguidores/Juliana soba/Imagens_de_negocio/publi 08.jpg" alt="" class="img_para_abrir_08">
+                                <div class="icones_img_negocios">
+                                    <button class="btn_icones" onclick="Abiri_imgs_negocios( '.img_para_abrir_08' ,'.jnl_imgs_negocios' )"><i class="bi bi-arrows-angle-expand"></i></button>
+                                    <a href="Detalhes.html"><i class="bi bi-eye-fill"></i></a>
+                                    <button class="btn_icones"><i class="bi bi-star-fill"></i></button>
+                                </div>
+                            </div>
+                            <div class="aria_conteudo_negocio">
+                                <div class="aria_conteudo_negocio_header">
+                                    <p><a href="#">Juliana soba</a></p>
+                                    <strong><span>Lorem</span> ipsum dolor </strong>
+                                </div>
+                                <div class="aria_conteudo_negocio_body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos earum maxime.
+                                    </p>
+                                    <div class="estrelas">
+                                        <div class="classicica">
+                                            <span>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="aria_conteudo_negocio_footer">
+                                    <strong><span>Kz</span>20 000</strong>
+                                    <button>Fechar Biolo</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="aria_img_negocio">
+                                <img src="../Imagens/Img de pessoas/imagens de seguidores/Ivanildo/Imagens_de_negocio/publi 02.jpg" alt="" class="img_para_abrir_09">
+                                <div class="icones_img_negocios">
+                                    <button class="btn_icones" onclick="Abiri_imgs_negocios( '.img_para_abrir_09' ,'.jnl_imgs_negocios' )"><i class="bi bi-arrows-angle-expand"></i></button>
+                                    <a href="Detalhes.html"><i class="bi bi-eye-fill"></i></a>
+                                    <button class="btn_icones"><i class="bi bi-star-fill"></i></button>
+                                </div>
+                            </div>
+                            <div class="aria_conteudo_negocio">
+                                <div class="aria_conteudo_negocio_header">
+                                    <p><a href="#">Ivanildo correia</a></p>
+                                    <strong><span>Lorem</span> ipsum dolor </strong>
+                                </div>
+                                <div class="aria_conteudo_negocio_body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos earum maxime.
+                                    </p>
+                                    <div class="estrelas">
+                                        <div class="classicica">
+                                            <span>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="aria_conteudo_negocio_footer">
+                                    <strong><span>Kz</span>50 000</strong>
+                                    <button>Fechar Biolo</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Pessoas_para_seguir">
+                <div class="Pessoas_para_seguir_header">
+                    <strong><span>Algumas</span> pessoas para seguir</strong>
+                    <nav>
+                        <form action="#">
+                            <i class="bi bi-search"></i>
+                            <input type="search" placeholder="Procura pessoas que conheces" required>
+                        </form>
+                        <button>
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </nav>
+                </div>  
+                <div class="Pessoas_para_seguir_texto">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium illum asperiores ipsa maxime.
+                    </p>
+                </div>
+                <div class="Local_pessoas_para_seguir">
+                    <div class="info_Pessoa_pra_seguir">
+                        <ul>
+                            <li>
+                                <div class="info_Pessoa_pra_seguir_header">
+                                    <div class="info_Pessoa_pra_seguir_header_left">
+                                        <div class="caixa_img_de_pessoa_para_seguir">
+                                            <img src="../Imagens/Img de pessoas/imagens de seguidores/Garcia Mbuxi/Imagens_de_perfil/Garcia Mbuxi.jpg" alt="">
+                                        </div>
+
+                                        <div class="Local_do_nome_pessoa">
+                                            <strong><a href="#">Garcia Mbuxi</a></strong>
+                                            <small>
+                                                Lorem ipsum dolor sit .
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <button><i class="bi bi-three-dots-vertical" aria-hidden="true"></i></button>
+                                </div>
+                                <div class="info_Pessoa_pra_seguir_estrelas">
+                                    <div class="classicica">
+                                        <span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </span>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="info_Pessoa_pra_seguir_text_sobre_ele">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum quo architecto delectus, explicabo unde. Sint iusto modi corporis, eum aliquam a quia, rem obcaecati suscipit vel provident quaerat quos!
+                                    </p>
+                                </div>
+                                <div class="info_Pessoa_pra_seguir_btn_seguir">
+                                    <ul>
+                                        <li><button class="rede_01"><i class="bi bi-facebook"></i></button></li>
+                                        <li><button class="rede_02"><i class="bi bi-twitter"></i></button></li>
+                                        <li><button class="rede_03"><i class="bi bi-instagram"></i></button></li>
+                                    </ul>
+                                    <button>Seguir</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lista_pessoas_para_seguir">
+                        <ul>
+                            <li>
+                                <button>
+                                    <img src="../Imagens/Img de pessoas/imagens de seguidores/Garcia Mbuxi/Imagens_de_perfil/Garcia Mbuxi.jpg" alt="">
+                                </button>
+                                <div class="dados_pessoas_para_seguir">
+                                    <strong><a href="#">Garcia Mbuxi</a></strong>
+                                    <small>Lorem ipsum dolor sit amet consectetur elit ...</small>
+                                </div>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="../Imagens/Img de pessoas/imagens de seguidores/Alcina/Imagens_de_perfil/Alcina.jpg" alt="">
+                                </button>
+                                <div class="dados_pessoas_para_seguir">
+                                    <strong><a href="#">Alcina paqueta</a></strong>
+                                    <small>Lorem ipsum dolor sit amet consectetur elit ...</small>
+                                </div>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="../Imagens/Img de pessoas/imagens de seguidores/Fabio junik/Imagens_de_perfil/Fabio.jpg" alt="">
+                                </button>
+                                <div class="dados_pessoas_para_seguir">
+                                    <strong><a href="#">Fabio junik</a></strong>
+                                    <small>Lorem ipsum dolor sit amet consectetur elit ...</small>
+                                </div>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="../Imagens/Img de pessoas/imagens de seguidores/Ivanildo/Imagens_de_perfil/Ivanildo.jpg" alt="">
+                                </button>
+                                <div class="dados_pessoas_para_seguir">
+                                    <strong><a href="#">Ivanildo correia</a></strong>
+                                    <small>Lorem ipsum dolor sit amet consectetur elit ...</small>
+                                </div>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="../Imagens/Img de pessoas/imagens de seguidores/Matumona/imagens_de_perfil/Matumona.jpg" alt="">
+                                </button>
+                                <div class="dados_pessoas_para_seguir">
+                                    <strong><a href="#">Domingos matumona</a></strong>
+                                    <small>Lorem ipsum dolor sit amet consectetur elit ...</small>
+                                </div>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="../Imagens/Img de pessoas/imagens de seguidores/Juliana soba/Imagens_de_perfil/Juliana soba.jpg" alt="">
+                                </button>
+                                <div class="dados_pessoas_para_seguir">
+                                    <strong><a href="#">Juliana soba</a></strong>
+                                    <small>Lorem ipsum dolor sit amet consectetur elit ...</small>
+                                </div>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="Sobre_a_plataforma">
+                <div class="Sobre_a_plataforma_left">
+                    <div class="header">
+                        <strong><span>Sobre </span>nossa plataforma </strong>
+                    </div>
+                    <div class="body">
+                        <p>
+                            You are allowed to use this HexaShop HTML CSS template. You can feel free to modify or edit this layout. You can convert this template as any kind of ecommerce CMS theme as you wish.
+                        </p>
+                        <div class="quote">
+                            <i class="bi bi-quote"></i>
+                            <p>
+                                You are not allowed to redistribute this template ZIP file on any other website.
+                            </p>
+                        </div>
+                        <p>
+                            There are 5 pages included in this HexaShop Template and we are providing it to you for absolutely free of charge at our TemplateMo website. There are web development costs for us.
+                        </p>
+                        <p>
+                            If this template is beneficial for your website or business, please kindly <a href="#">support us</a> a little via PayPal. Please also tell your friends about our great website. Thank you.
+                        </p>
+                        <div class="btn_saber_mais">
+                            <a href="#">Saber mais...</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="Sobre_a_plataforma_right">
+                    <div class="caixas_right caixa_longo">
+                        <strong>Torna seu negócio mais visivel</strong>
+                        <small>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                        </small>
+                    </div>
+                    <div class="caixas_right caixa_curto">
+                        <img src="../Imagens/Img_publicidd/publicidd 04.jpg" alt="">
+                    </div>
+                    <div class="caixas_right caixa_curto">
+                        <img src="../Imagens/Img_publicidd/publicidd 01.jpg" alt="">
+                    </div>
+                    <div class="caixas_right caixa_longo">
+                        <strong>Mais facil entrar em contato com seus clientes !</strong>
+                        <small>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="publicidd_do_App">
+                <div class="publicidd_do_App_left">
+                    <div class="publicidd_do_App_left_head">
+                        <strong><span>Baixa</span> já o App Biolos</strong>
+                    </div>
+                    <div class="publicidd_do_App_left_body">
+                        <div class="protot_fone">
+                            <div class="protot_fone_head">
+                                <div class="protot_fone_head_left">
+                                    <p>
+                                        Bem vindo <br>ao App Biolos
+                                    </p>
+                                </div> 
+                                <div class="protot_fone_head_right">
+                                </div>
+                            </div>
+                            <div class="protot_fone_body"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="publicidd_do_App_right">
+                    <div class="publicidd_do_App_right_sombra_public">
+                        <div class="ciaxa_de_texto_publicidd">
+                            <h2>
+                                Aproveita , Baixa já o app Biolos para negóciar mais rapido !
+                            </h2>
+                            <button>
+                                <a href="#" download="...">
+                                    <i class="bi bi-download"></i>
+                                    <span>Baixar</span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <img src="../Imagens/Img_publicidd/publicidd 01.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="../Imagens/Img_publicidd/publicidd 02.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="../Imagens/Img_publicidd/publicidd 03.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="../Imagens/Img_publicidd/publicidd 04.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="../Imagens/Img_publicidd/publicidd 05.jpg" alt="">
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <ul>
+                    <li>
+                        <h2><span>B</span>iolos</h2>
+                        <p>
+                            A forma mais facil e rapido de espandir <br>os seus negocios , independetemente<br> do tamanho do seu negócio o <span>Biolos</span><br>
+                            estará sempre lá para ajudar !
+                        </p>
+                        
+                    </li>
+                    <li>
+                        <h3>Sobre</h3>
+                        <nav>
+                            <a href="#">Contatos</a>
+                            <a href="#">Definições</a>
+                            <a href="#">Privacidade</a>
+                        </nav>
+                    </li>
+                    <li>
+                        <h3>Comunicar</h3>
+                        <nav>
+                            <a href="#">Minha conta</a>
+                            <a href="#">Termos</a>
+                            <a href="#">Políticos</a>
+                        </nav>
+                    </li>
+                    <li>
+                        <h3>Preferências</h3>
+                        <select name="Seleciona a lingua" id="lang">
+                            <option value="">Seleciona a lingua </option>
+                            <option value="">Portugues</option>
+                            <option value="">Englesh</option>
+                            <option value="">Frances</option>
+                        </select>
+                        <div class="logos">
+                            <a href="#" class="rede_01"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="rede_02"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="rede_03"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="rede_04"><i class="bi bi-dribbble"></i></a>
+                            <a href="#" class="rede_05"><i class="bi bi-google"></i></a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="footer_foot">
+                    <p>
+                        Copyright © 2022 Nova plataforma de negócios <span>Biolos</span>, para facilitar a sua vida
+                    </p>  
+                </div>
+            </div>
+            <div id="Minha_pasta">
+                <button>
+                    <i class="bi bi-cart4"></i>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <div id="Sombras_Janelas">
+        
+        <div class="jnl_imgs_negocios">
+            <div class="jnl_imgs_negocios_aria_btn_fechar">
+                <button onclick="Fechar_jnls('.jnl_imgs_negocios')">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <div class="Aria_de_receber_imgs_negocios">
+                <img src="" alt="" class="img_que_recebe_imagem_de_negocio">
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="Sombras_Janelas_pesquisa_geral">
+        <div class="Local_de_pesquisa_geral">
+            <div class="Local_de_pesquisa_geral_head">
+                <form action="#">
+                    <i class="bi bi-search"></i>
+                    <input type="search" placeholder="O que procuras ?">
+                </form>
+                <button  onclick="Fechar_Local_de_pesquisa_geral( '#Sombras_Janelas_pesquisa_geral' , '.Local_de_pesquisa_geral' )">
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+            <div class="Local_de_pesquisa_geral_body">
+            
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="../Js/appOpens.js"></script>
+    <script src="../Js/appActions.js"></script>
+</body>
+</html>

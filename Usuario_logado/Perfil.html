@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil | Plataforma biolos</title>
+    <link rel="stylesheet" href="Css/Perfil.css">
+    <link rel="stylesheet" href="../Css/main.css">
+    <link rel="stylesheet" href="../Icones/bootstrap-icons.css">
+    <script src="../Js/appUsuarioLogado.js"></script>
+</head>
+<body onload="carregarDadosUsuario() , recuperarDadosParaAtualizar()">
+    <header>
+        <h1>
+            <span>B</span>iolos
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <button onclick="Abrir_Local_de_pesquisa_geral( '#Sombras_Janelas_pesquisa_geral' , '.Local_de_pesquisa_geral')">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-cart-check-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <button id="mensagens">
+                        <i class="bi bi-chat-left-text-fill"></i>
+                    </button>
+                    <div id="sms_dropdown" class="caixa_de_sms_basica">
+                        <div class="header_dropdown">
+                            <span>Tens 4 mensagens novas !</span>
+                        </div>
+                        <div class="list_news">
+                            <ul>
+                                <li>
+                                    <div class="caixa_img_sms">
+                                        <img src="../Imagens/Imagens_de_pessoas/Img_usuarios/usuario_01.jpg" alt="">
+                                    </div>
+                                    <div class="caixa_text_sms">
+                                        <strong>Ivanildo Correia</strong>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur...
+                                        </p>
+                                        <small>há 2min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="caixa_img_sms">
+                                        <img src="../Imagens/Imagens_de_pessoas/Img_usuarios/usuario_02.jpg" alt="">
+                                    </div>
+                                    <div class="caixa_text_sms">
+                                        <strong>Domingos matumona</strong>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur...
+                                        </p>
+                                        <small>há 4min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="caixa_img_sms">
+                                        <img src="../Imagens/Imagens_de_pessoas/Img_usuarios/usuario_03.jpg" alt="">
+                                    </div>
+                                    <div class="caixa_text_sms">
+                                        <strong>Gerson paulo</strong>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur...
+                                        </p>
+                                        <small>há 6min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="caixa_img_sms">
+                                        <img src="../Imagens/Imagens_de_pessoas/Img_usuarios/usuario_04.jpg" alt="">
+                                    </div>
+                                    <div class="caixa_text_sms">
+                                        <strong>Juliana Soba</strong>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur...
+                                        </p>
+                                        <small>há 8min</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_dropdown">
+                            <a href="#">Ver mais mensagens</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button id="news">
+                        <i class="bi bi-bell-fill"></i>
+                    </button>
+                    <div id="news_dropdown" class="caixa_de_news_basica">
+                        <div class="header_dropdown">
+                            <span>Tens 4 notificações novas !</span>
+                        </div>
+                        <div class="list_news">
+                            <ul>
+                                <li>
+                                    <i class="bi bi-check2-circle"></i>
+                                    <div class="caixa_conteudo">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                        </p>
+                                        <small>há 2 min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="bi bi-envelope"></i>
+                                    <div class="caixa_conteudo">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                        </p>
+                                        <small>há 2 min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="bi bi-lock"></i>
+                                    <div class="caixa_conteudo">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                        </p>
+                                        <small>há 2 min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="bi bi-info-circle"></i>
+                                    <div class="caixa_conteudo">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                        </p>
+                                        <small>há 2 min</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_dropdown">
+                            <a href="#">Ver mais notificações</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="perfil">
+                    <div class="dados_perfil_header">
+                        <div class="caixa_img_perfil">
+                            <img src="" class="fotoPerfilUsuario" alt=" foto de perfil">
+                        </div>
+                        <strong id="abrir_menu_perfil_por_nome">
+                            <span class="nomeUsuario"></span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </strong>
+                    </div>
+                    <div id="perfil_dropdown" class="caixa_de_perfil_basica">
+                        <div class="header_dropdown">
+                            <strong>
+                                <span class="nomeUsuario"></span> <span class="apelidoUsuario"></span>
+                            </strong>
+                            <small class="emailUsuario"></small>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="Perfil.html">
+                                    <i class="bi bi-person"></i>
+                                    <span>Minha conta</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-gear"></i>
+                                    <span>Configurar conta</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-question-circle"></i>
+                                    <span>Ajuda</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-box-arrow-in-right"></i>
+                                    <span>Terminar sessão</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="All">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="efeito"> 
+                        <a href="Index.html" >
+                            <i class="bi bi-house-fill"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#" >
+                            <i class="bi bi-people-fill"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#">
+                            <i class="bi bi-plus-circle"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#" >
+                            <i class="bi bi-bar-chart-line-fill"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#" >
+                            <i class="bi bi-gear-fill"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#" >
+                            <i class="bi bi-question-circle-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <div class="foto_capa_perfil">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </p>
+                <div class="texto_capa_02">
+                    <small>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid perspiciatis quam qui ullam voluptas cupiditate saepe, officiis 
+                    </small>
+                </div>
+            </div>
+
+            <div class="tudo_sobre_a_pessoa">
+                <div class="tudo_sobre_a_pessoa_left">
+                    <div class="Local_de_atualizar_img_perfil" id="Atualizar_foto_de_perfil">
+                        <div class="btns top">
+                            <button onclick="fecharModaisDeAtualizarDados( '#Atualizar_foto_de_perfil' )">
+                                <small>
+                                    <i class="bi bi-x-circle"></i>
+                                </small>
+                            </button>
+                        </div>
+
+                        <div class="espaco_img_">
+                            <img src="" alt="" id="espacoTestarImgPefil">
+                        </div>
+
+                        <div class="btns bottom">
+                            <button class="carrega_img">
+                                <span>Carregar</span>
+                                <input type="file" accept="image/*" id="buscaImgPerfil">
+                            </button>
+                            <button type="submit" id="salvarNovaImgPerfil">
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="Aria_foto_de_perfil">
+                        <img src="" class="fotoPerfilUsuario" alt="">
+                        <div class="btns_img_perfil">
+                            <button>
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button onclick="abrirModaisDeAtualizarDados( '#Atualizar_foto_de_perfil' )">
+                                <i class="bi bi-pencil-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="Local_nomes">
+                        <p><span class="nomeUsuario"></span> <span class="apelidoUsuario"></span></p>
+                    </div>
+                    <div class="biografia">
+                        <p class="descricaoUsuario">
+                            
+                        </p>
+                        <div class="Local_btn">
+                            <button onclick="abrirModaisDeAtualizarDados( '#Atualizar_Biografia' )">
+                                <small>
+                                    <i class="bi bi-pencil-fill"></i>
+                                </small>
+                            </button>
+                        </div>
+                        <div class="caixa_Atualizar_biografia" id="Atualizar_Biografia">
+                            <form action="#">
+                                <div class="Local_btn">
+                                    <button onclick="fecharModaisDeAtualizarDados( '#Atualizar_Biografia' )">
+                                        <small>
+                                            <i class="bi bi-x-circle"></i>
+                                        </small>
+                                    </button>
+                                </div>
+                                <div class="caixas_inputs_label">
+                                    <textarea id="CaixaDescricao" cols="30" rows="2" required></textarea>
+                                    <label id="labelDescricao">Descreve mais sobre te</label>
+                                </div>
+                                <div class="Local_btn">
+                                    <button id="btnSalvarNovaDescricao">
+                                        <i class="bi bi-check2-all"></i>
+                                        <span>Salvar</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <ul>
+                            <li>
+                                <div class="dados">
+                                    <div class="icon_dados">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </div>
+                                    <div class="Mais_dados">
+                                        <p class="gpsUsuario"></p>
+                                        <small>Cidade atual</small>
+                                    </div>
+                                </div>
+                                <button onclick="abrirModaisDeAtualizarDados( '#Atualizar_Gps' )">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </button>
+                                <form action="#" id="Atualizar_Gps">
+                                    <div class="Local_btn">
+                                        <button onclick="fecharModaisDeAtualizarDados( '#Atualizar_Gps' )">
+                                            <small>
+                                                <i class="bi bi-x-circle"></i>
+                                            </small>
+                                        </button>
+                                    </div>
+                                    <div class="caixas_inputs_label">
+                                        <input type="text" required id="inputNovoGpsUsuario">
+                                        <label id="labelNovoGpsUsuario">Atualiza a localização !</label>
+                                    </div>
+                                    <div class="Local_btn">
+                                        <button id="btnNovoGpsUsuario">
+                                            <i class="bi bi-check2-all"></i>
+                                            <span>Salvar</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </li>
+                            <li>
+                                <div class="dados">
+                                    <div class="icon_dados">
+                                        <i class="bi bi-phone"></i>
+                                    </div>
+                                    <div class="Mais_dados">
+                                        <p class="numeroTelefoneUsuario"></p>
+                                        <small>Celular</small>
+                                    </div>
+                                </div>
+                                <button onclick="abrirModaisDeAtualizarDados( '#Atualizar_Numero' )">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </button>
+                                <form action="#" id="Atualizar_Numero">
+                                    <div class="Local_btn">
+                                        <button onclick="fecharModaisDeAtualizarDados( '#Atualizar_Numero' )">
+                                            <small>
+                                                <i class="bi bi-x-circle"></i>
+                                            </small>
+                                        </button>
+                                    </div>
+                                    <div class="caixas_inputs_label">
+                                        <input type="number" required id="inputNovoNumero">
+                                        <label id="labelNovoNumero">Atualiza seu contato</label>
+                                    </div>
+                                    <div class="Local_btn">
+                                        <button id="btnAtualizarNunmero">
+                                            <i class="bi bi-check2-all"></i>
+                                            <span>Salvar</span>
+                                        </button>
+                                    </div>
+                                </form>                              
+                            </li>
+                            <li>
+                                <div class="dados">
+                                    <div class="icon_dados">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </div>
+                                    <div class="Mais_dados">
+                                        <p class="emailUsuario"></p>
+                                        <small>Email</small>
+                                    </div>
+                                </div>
+                                <button onclick="abrirModaisDeAtualizarDados( '#Atualizar_Email' )">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </button>
+                                <form action="#" id="Atualizar_Email">
+                                    <div class="Local_btn">
+                                        <button onclick="fecharModaisDeAtualizarDados( '#Atualizar_Email' )">
+                                            <small>
+                                                <i class="bi bi-x-circle"></i>
+                                            </small>
+                                        </button>
+                                    </div>
+                                    <div class="caixas_inputs_label">
+                                        <input type="text" required id="inputNovoEmailUsuario">
+                                        <label id="labelNovoEmailUsuario">Atualiza seu email</label>
+                                    </div>
+                                    <div class="Local_btn">
+                                        <button id="btnNovoEmailUsuario">
+                                            <i class="bi bi-check2-all"></i>
+                                            <span>Salvar</span>
+                                        </button>
+                                    </div>
+                                </form> 
+                            </li>
+                            <li>
+                                <div class="dados">
+                                    <div class="icon_dados">
+                                        <i class="bi bi-person-fill"></i>
+                                    </div>
+                                    <div class="Mais_dados">
+                                        <p class="generoUsuario"></p>
+                                        <small>Gênero</small>
+                                    </div>
+                                </div>
+                                <button>
+                                    <i class="bi bi-pencil-fill"></i>
+                                </button>
+                            </li>
+                            <li>
+                                <div class="dados">
+                                    <div class="icon_dados">
+                                        <i class="bi bi-clock-fill"></i>
+                                    </div>
+                                    <div class="Mais_dados">
+                                        <p class="dataNascimentoUsuario"></p>
+                                        <small>Data de nascimento</small>
+                                    </div>
+                                </div>
+                                <button onclick="abrirModaisDeAtualizarDados( '#Atualizar_Data' )">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </button>
+                                <form action="#" id="Atualizar_Data">
+                                    <div class="Local_btn">
+                                        <button onclick="fecharModaisDeAtualizarDados( '#Atualizar_Data' )">
+                                            <small>
+                                                <i class="bi bi-x-circle"></i>
+                                            </small>
+                                        </button>
+                                    </div>
+                                    <div class="caixas_inputs_label">
+                                        <input type="date" required id="inputNovaDataNascimentoUsuario">
+                                    </div>
+                                    <div class="Local_btn">
+                                        <button id="btnNovaDataNascimentoUsuario">
+                                            <i class="bi bi-check2-all"></i>
+                                            <span>Salvar</span>
+                                        </button>
+                                    </div>
+                                </form>  
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tudo_sobre_a_pessoa_right">
+                    
+                    <div class="tudo_sobre_a_pessoa_right_redes_usadas">
+                        <div class="logos">
+                            <a href="#" class="rede_01"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="rede_02"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="rede_03"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="rede_05"><i class="bi bi-instagram"></i></a>
+                        </div>
+
+                        <div class="btns_perfil">
+                            <button>
+                                <i class="bi bi-cart4"></i>
+                                <span>
+                                    Posta seu biolo
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="historico">
+                        <div class="historico_head">
+                            <strong>Historico</strong>
+                            <small>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </small>
+                        </div>
+                        <div class="historico_body">
+                            <button  onclick=" slideShow_caixa_anterior( '.Ul_historico' , '.li_historico' , '169' ) ">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <div class="historico_body_caixas">
+                                <ul class="Ul_historico">
+                                    <li id="primeira_caixa" class="li_historico">
+                                        <img src="../Imagens/Img de pessoas/imagens de seguidores/Matumona/Imagens_de_negocio/publi 01.jpg" alt="">
+                                        <div class="sombra_sobre_img_historico">
+                                            <small>
+                                                <button>
+                                                    <i class="bi bi-eye-fill"></i><p>30</p>
+                                                </button>
+                                            </small>
+                                        </div>
+                                    </li>
+                                    <li class="li_historico">
+                                        <img src="../Imagens/Img de pessoas/imagens de seguidores/Matumona/Imagens_de_negocio/publi 01.jpg" alt="">
+                                        <div class="sombra_sobre_img_historico">
+                                            <small>
+                                                <button>
+                                                    <i class="bi bi-eye-fill"></i><p>30</p>
+                                                </button>
+                                            </small>
+                                        </div>
+                                    </li>
+                                    <li class="li_historico">
+                                        <img src="../Imagens/Img de pessoas/imagens de seguidores/Matumona/Imagens_de_negocio/publi 01.jpg" alt="">
+                                        <div class="sombra_sobre_img_historico">
+                                            <small>
+                                                <button>
+                                                    <i class="bi bi-eye-fill"></i><p>30</p>
+                                                </button>
+                                            </small>
+                                        </div>
+                                    </li>
+                                    <li class="li_historico">
+                                        <img src="../Imagens/Img de pessoas/imagens de seguidores/Matumona/Imagens_de_negocio/publi 01.jpg" alt="">
+                                        <div class="sombra_sobre_img_historico">
+                                            <small>
+                                                <button>
+                                                    <i class="bi bi-eye-fill"></i><p>30</p>
+                                                </button>
+                                            </small>
+                                        </div>
+                                    </li>
+                                    <li class="li_historico">
+                                        <img src="../Imagens/Img de pessoas/imagens de seguidores/Matumona/Imagens_de_negocio/publi 01.jpg" alt="">
+                                        <div class="sombra_sobre_img_historico">
+                                            <small>
+                                                <button>
+                                                    <i class="bi bi-eye-fill"></i><p>30</p>
+                                                </button>
+                                            </small>
+                                        </div>
+                                    </li>
+                                    <li class="li_historico">
+                                        <img src="../Imagens/Img de pessoas/imagens de seguidores/Matumona/Imagens_de_negocio/publi 01.jpg" alt="">
+                                        <div class="sombra_sobre_img_historico">
+                                            <small>
+                                                <button>
+                                                    <i class="bi bi-eye-fill"></i><p>30</p>
+                                                </button>
+                                            </small>
+                                        </div>
+                                    </li>
+                                    <li id="ultima_caixa" class="li_historico">
+                                        <img src="../Imagens/Img de pessoas/imagens de seguidores/Matumona/Imagens_de_negocio/publi 01.jpg" alt="">
+                                        <div class="sombra_sobre_img_historico">
+                                            <small>
+                                                <button>
+                                                    <i class="bi bi-eye-fill"></i><p>30</p>
+                                                </button>
+                                            </small>
+                                        </div>
+                                    </li>
+                                </ul >
+                            </div>
+                            <button onclick=" slideShow_proxima_caixa( '.Ul_historico' , '.li_historico' , '169' ) " >
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="Local_Caixa_biolos_recente">
+                        <div class="Espaco_img_biolos_recent">
+                            <img src="../Imagens/Img de pessoas/imagens de seguidores/Matumona/Imagens_de_negocio/publi 01.jpg" alt="">
+                        </div>
+                        <div class="info_biolos_recent">
+                            <div class="centraliza_info_biolo_recent">
+                                <div class="espaco_edit_apagar_biolo">
+                                    <div class="img_nome_vendedor">
+                                        <div class="caixa_img_vendedor">
+                                            <img src="" class="fotoPerfilUsuario" alt="">
+                                        </div>
+                                        <div class="caixa_nome_vendedor">
+                                            <strong  class="nomeUsuario"></strong>
+                                            <small>há 2min</small>
+                                        </div>
+                                    </div>
+                                    <button>
+                                        <i class="bi bi-three-dots-vertical"></i>
+                                    </button>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis...
+                                </p>
+                                <div class="espaco_gps_negocio">
+                                    <p>
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <span class="gpsUsuario">
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="espaco_gps_negocio">
+                                    <p>
+                                        <i class="bi bi-phone"></i>
+                                        <span class="numeroTelefoneUsuario">
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="espaco_clissicic">
+                                    <p>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </p>
+                                </div>
+                                <div class="espaco_preco">
+                                    <strong>
+                                        <span>Kz</span>
+                                        20 000 00
+                                    </strong>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="footer">
+                <ul>
+                    <li>
+                        <h2><span>B</span>iolos</h2>
+                        <p>
+                            A forma mais facil e rapido de espandir <br>os seus negocios , independetemente<br> do tamanho do seu negócio o <span>Biolos</span><br>
+                            estará sempre lá para ajudar !
+                        </p>
+                        
+                    </li>
+                    <li>
+                        <h3>Sobre</h3>
+                        <nav>
+                            <a href="#">Contatos</a>
+                            <a href="#">Definições</a>
+                            <a href="#">Privacidade</a>
+                        </nav>
+                    </li>
+                    <li>
+                        <h3>Comunicar</h3>
+                        <nav>
+                            <a href="#">Minha conta</a>
+                            <a href="#">Termos</a>
+                            <a href="#">Políticos</a>
+                        </nav>
+                    </li>
+                    <li>
+                        <h3>Preferências</h3>
+                        <select name="Seleciona a lingua" id="lang">
+                            <option value="">Seleciona a lingua </option>
+                            <option value="">Portugues</option>
+                            <option value="">Englesh</option>
+                            <option value="">Frances</option>
+                        </select>
+                        <div class="logos">
+                            <a href="#" class="rede_01"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="rede_02"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="rede_03"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="rede_04"><i class="bi bi-dribbble"></i></a>
+                            <a href="#" class="rede_05"><i class="bi bi-google"></i></a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="footer_foot">
+                    <p>
+                        Copyright © 2022 Nova plataforma de negócios <span>Biolos</span>, para facilitar a sua vida
+                    </p>  
+                </div>
+            </div>
+
+            <div id="Minha_pasta">
+                <button>
+                    <i class="bi bi-cart4"></i>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <div id="Sombras_Janelas">
+        
+        <div class="jnl_imgs_negocios">
+            <div class="jnl_imgs_negocios_aria_btn_fechar">
+                <button onclick="Fechar_jnls('.jnl_imgs_negocios')">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <div class="Aria_de_receber_imgs_negocios">
+                <img src="" alt="" class="img_que_recebe_imagem_de_negocio">
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="Sombras_Janelas_pesquisa_geral">
+        <div class="Local_de_pesquisa_geral">
+            <div class="Local_de_pesquisa_geral_head">
+                <form action="#">
+                    <i class="bi bi-search"></i>
+                    <input type="search" placeholder="O que procuras ?">
+                </form>
+                <button  onclick="Fechar_Local_de_pesquisa_geral( '#Sombras_Janelas_pesquisa_geral' , '.Local_de_pesquisa_geral' )">
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+            <div class="Local_de_pesquisa_geral_body">
+            
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="../Js/appOpens.js"></script>
+    <script src="../Js/appActions.js"></script>
+    <script src="../Js/appAtualizarDadosUsuarioLogado.js"></script>
+
+</body>
+</html>

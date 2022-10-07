@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mensagens | Plataforma biolos</title>
+    <link rel="stylesheet" href="Css/Mensagens.css">
+    <link rel="stylesheet" href="../Css/main.css">
+    <link rel="stylesheet" href="../Icones/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <span>B</span>iolos
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <button onclick="Abrir_Local_de_pesquisa_geral( '#Sombras_Janelas_pesquisa_geral' , '.Local_de_pesquisa_geral')">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-cart-check-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <button id="mensagens">
+                        <i class="bi bi-chat-left-text-fill"></i>
+                    </button>
+                    <div id="sms_dropdown" class="caixa_de_sms_basica">
+                        <div class="header_dropdown">
+                            <span>Tens 4 mensagens novas !</span>
+                        </div>
+                        <div class="list_news">
+                            <ul>
+                                <li>
+                                    <div class="caixa_img_sms">
+                                        <img src="../Imagens/Imagens_de_pessoas/Img_usuarios/usuario_01.jpg" alt="">
+                                    </div>
+                                    <div class="caixa_text_sms">
+                                        <strong>Ivanildo Correia</strong>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur...
+                                        </p>
+                                        <small>há 2min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="caixa_img_sms">
+                                        <img src="../Imagens/Imagens_de_pessoas/Img_usuarios/usuario_02.jpg" alt="">
+                                    </div>
+                                    <div class="caixa_text_sms">
+                                        <strong>Domingos matumona</strong>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur...
+                                        </p>
+                                        <small>há 4min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="caixa_img_sms">
+                                        <img src="../Imagens/Imagens_de_pessoas/Img_usuarios/usuario_03.jpg" alt="">
+                                    </div>
+                                    <div class="caixa_text_sms">
+                                        <strong>Gerson paulo</strong>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur...
+                                        </p>
+                                        <small>há 6min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="caixa_img_sms">
+                                        <img src="../Imagens/Imagens_de_pessoas/Img_usuarios/usuario_04.jpg" alt="">
+                                    </div>
+                                    <div class="caixa_text_sms">
+                                        <strong>Juliana Soba</strong>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur...
+                                        </p>
+                                        <small>há 8min</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_dropdown">
+                            <a href="#">Ver mais mensagens</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button id="news">
+                        <i class="bi bi-bell-fill"></i>
+                    </button>
+                    <div id="news_dropdown" class="caixa_de_news_basica">
+                        <div class="header_dropdown">
+                            <span>Tens 4 notificações novas !</span>
+                        </div>
+                        <div class="list_news">
+                            <ul>
+                                <li>
+                                    <i class="bi bi-check2-circle"></i>
+                                    <div class="caixa_conteudo">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                        </p>
+                                        <small>há 2 min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="bi bi-envelope"></i>
+                                    <div class="caixa_conteudo">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                        </p>
+                                        <small>há 2 min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="bi bi-lock"></i>
+                                    <div class="caixa_conteudo">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                        </p>
+                                        <small>há 2 min</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="bi bi-info-circle"></i>
+                                    <div class="caixa_conteudo">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                        </p>
+                                        <small>há 2 min</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_dropdown">
+                            <a href="#">Ver mais notificações</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="perfil">
+                    <div class="dados_perfil_header">
+                        <div class="caixa_img_perfil">
+                            <img src="../Imagens/Imagens_de_pessoas/Img_meu_perfil/Foto_de_perfil.jpg" alt=" foto de perfil">
+                        </div>
+                        <strong id="abrir_menu_perfil_por_nome">
+                            <span>Poly Carpe</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </strong>
+                    </div>
+                    <div id="perfil_dropdown" class="caixa_de_perfil_basica">
+                        <div class="header_dropdown">
+                            <strong>Poly Carpe</strong>
+                            <small>eupoly786@gmail.com</small>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-person"></i>
+                                    <span>Minha conta</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-gear"></i>
+                                    <span>Configurar conta</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-question-circle"></i>
+                                    <span>Ajuda</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-box-arrow-in-right"></i>
+                                    <span>Terminar sessão</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="All">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="efeito"> 
+                        <a href="Index.html" >
+                            <i class="bi bi-house-fill"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#" >
+                            <i class="bi bi-people-fill"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#">
+                            <i class="bi bi-plus-circle"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#" >
+                            <i class="bi bi-bar-chart-line-fill"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#" >
+                            <i class="bi bi-gear-fill"></i>
+                        </a>
+                    </li>
+                    <li class="efeito">
+                        <a href="#" >
+                            <i class="bi bi-question-circle-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <div class="Aria_total_sms">
+                
+                <div class="Aria_sms_left">
+                    <form action="#">
+                        <i class="bi bi-search"></i>
+                        <input 
+                            type="search"
+                            placeholder="Pesquisa as mensagens"
+                            required
+                        />
+                    </form>
+                    <ul>
+                        <li>
+                            <div class="caixa_img">
+                                <a href="#">
+                                    <img src="../Imagens/Img de pessoas/imagens de seguidores/Garcia Mbuxi/Imagens_de_perfil/Garcia Mbuxi.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="local_mensagem">
+                                <div class="local_mensagem_top">
+                                    <strong><a href="#">Garcia Mbuxi</a></strong>
+                                    <small>Online</small>
+                                </div>
+                                <small>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, perspiciatis autem, nisi et.... 
+                                    </p>
+                                </small>
+                                <div class="btn_Abrir_local_sms">
+                                    <button>
+                                        <i class="bi bi-telephone-fill"></i>
+                                        Chamar
+                                    </button>
+                                    <button onclick="Abrir_Caixa_de_mensagens( '.caixa_de_chat' )">
+                                        <i class="bi bi-send-check-fill"></i>
+                                        Responder
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caixa_img">
+                                <a href="#">
+                                    <img src="../Imagens/Img de pessoas/imagens de seguidores/Alcina/Imagens_de_perfil/Alcina paquete.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="local_mensagem">
+                                <div class="local_mensagem_top">
+                                    <strong><a href="#">Alcina paquete</a></strong>
+                                    <small>Online</small>
+                                </div>
+                                <small>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, perspiciatis autem, nisi et.... 
+                                    </p>
+                                </small>
+                                <div class="btn_Abrir_local_sms">
+                                    <button>
+                                        <i class="bi bi-telephone-fill"></i>
+                                        Chamar
+                                    </button>
+                                    <button id="chat_1" onclick="Abrir_chat('chat_1')">
+                                        <i class="bi bi-send-check-fill"></i>
+                                        Responder
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caixa_img">
+                                <a href="#">
+                                    <img src="../Imagens/Img de pessoas/imagens de seguidores/Fabio junik/Imagens_de_perfil/Fabio.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="local_mensagem">
+                                <div class="local_mensagem_top">
+                                    <strong><a href="#">Fabio junik</a></strong>
+                                    <small>Online</small>
+                                </div>
+                                <small>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, perspiciatis autem, nisi et.... 
+                                    </p>
+                                </small>
+                                <div class="btn_Abrir_local_sms">
+                                    <button>
+                                        <i class="bi bi-telephone-fill"></i>
+                                        Chamar
+                                    </button>
+                                    <button id="chat_1" onclick="Abrir_chat('chat_1')">
+                                        <i class="bi bi-send-check-fill"></i>
+                                        Responder
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caixa_img">
+                                <a href="#">
+                                    <img src="../Imagens/Img de pessoas/imagens de seguidores/Ivanildo/Imagens_de_perfil/Ivanildo.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="local_mensagem">
+                                <div class="local_mensagem_top">
+                                    <strong><a href="#">Ivanildo Correia</a></strong>
+                                    <small>Online</small>
+                                </div>
+                                <small>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, perspiciatis autem, nisi et.... 
+                                    </p>
+                                </small>
+                                <div class="btn_Abrir_local_sms">
+                                    <button>
+                                        <i class="bi bi-telephone-fill"></i>
+                                        Chamar
+                                    </button>
+                                    <button id="chat_1" onclick="Abrir_chat('chat_1')">
+                                        <i class="bi bi-send-check-fill"></i>
+                                        Responder
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caixa_img">
+                                <a href="#">
+                                    <img src="../Imagens/Img de pessoas/imagens de seguidores/Juliana soba/Imagens_de_perfil/Juliana soba.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="local_mensagem">
+                                <div class="local_mensagem_top">
+                                    <strong><a href="#">Juliana soba</a></strong>
+                                    <small>Online</small>
+                                </div>
+                                <small>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, perspiciatis autem, nisi et.... 
+                                    </p>
+                                </small>
+                                <div class="btn_Abrir_local_sms">
+                                    <button>
+                                        <i class="bi bi-telephone-fill"></i>
+                                        Chamar
+                                    </button>
+                                    <button id="chat_1" onclick="Abrir_chat('chat_1')">
+                                        <i class="bi bi-send-check-fill"></i>
+                                        Responder
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caixa_img">
+                                <a href="#">
+                                    <img src="../Imagens/Img de pessoas/imagens de seguidores/Matumona/imagens_de_perfil/Matumona.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="local_mensagem">
+                                <div class="local_mensagem_top">
+                                    <strong><a href="#">Domingos Matumona</a></strong>
+                                    <small>Online</small>
+                                </div>
+                                <small>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, perspiciatis autem, nisi et.... 
+                                    </p>
+                                </small>
+                                <div class="btn_Abrir_local_sms">
+                                    <button>
+                                        <i class="bi bi-telephone-fill"></i>
+                                        Chamar
+                                    </button>
+                                    <button id="chat_1" onclick="Abrir_chat('chat_1')">
+                                        <i class="bi bi-send-check-fill"></i>
+                                        Responder
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="Mais_sms">
+                        <button>
+                            <i class="bi bi-envelope-plus-fill"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="Aria_sms_right">
+                    <div class="caixa_de_chat">
+                        <div class="caixa_de_chat_head">
+                            <div class="Local_img_e_nome">
+                                <div class="caixa_img_da_pessoa">
+                                    <img src="../Imagens/Img de pessoas/imagens de seguidores/Garcia Mbuxi/Imagens_de_perfil/Garcia Mbuxi.jpg" alt="">
+                                </div>
+                                <div class="caixa_de_nome_estado">
+                                    <strong>Garcia Mbuxi</strong>
+                                    <small>Online</small>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <button>
+                                        <i class="bi bi-camera-reels-fill"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <i class="bi bi-three-dots-vertical"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="caixa_de_chat_body">
+
+                            <ul>
+                                <li class="Sua_sms">
+                                    <div class="a_mensagem">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consec adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="Minha_sms">
+                                    <div class="a_mensagem">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consec adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="Sua_sms">
+                                    <div class="a_mensagem">
+                                        <p>
+                                            Lorem ipsum dolor sit amet !!. 
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="Minha_sms">
+                                    <div class="a_mensagem">
+                                        <p>
+                                            kkkk ... 
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="Sua_sms">
+                                    <div class="a_mensagem">
+                                        <p>
+                                            ?!. 
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="Minha_sms">
+                                    <div class="a_mensagem">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias consequuntur atque inventore voluptate pariatur  
+                                        </p>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+
+                        </div>
+
+
+                        <div class="caixa_de_chat_foot">
+                            <form action="#">
+                                <button>
+                                    <i class="bi bi-emoji-smile-fill"></i>
+                                </button>
+                                <textarea cols="30" rows="1" placeholder="Escreve a mensagem ..." required></textarea>
+                                <button type="submit">
+                                    <i class="bi bi-send-check-fill"></i>
+                                </button>
+                                <button>
+                                    <i class="bi bi-paperclip"></i>
+                                </button>
+                            </form>
+                            <button>
+                                <i class="bi bi-mic-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="Minha_pasta">
+                <button>
+                    <i class="bi bi-cart4"></i>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <div id="Sombras_Janelas">
+        
+        <div class="jnl_imgs_negocios">
+            <div class="jnl_imgs_negocios_aria_btn_fechar">
+                <button onclick="Fechar_jnls('.jnl_imgs_negocios')">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <div class="Aria_de_receber_imgs_negocios">
+                <img src="" alt="" class="img_que_recebe_imagem_de_negocio">
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="Sombras_Janelas_pesquisa_geral">
+        <div class="Local_de_pesquisa_geral">
+            <div class="Local_de_pesquisa_geral_head">
+                <form action="#">
+                    <i class="bi bi-search"></i>
+                    <input type="search" placeholder="O que procuras ?">
+                </form>
+                <button  onclick="Fechar_Local_de_pesquisa_geral( '#Sombras_Janelas_pesquisa_geral' , '.Local_de_pesquisa_geral' )">
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+            <div class="Local_de_pesquisa_geral_body">
+            
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="../Js/App_opens.js"></script>
+    <script src="../Js/App_actions.js"></script>
+</body>
+</html>

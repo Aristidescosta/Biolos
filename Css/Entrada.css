@@ -1,0 +1,277 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, sans-serif;
+}
+body{
+    background: #eee;
+}
+::-webkit-scrollbar{
+    background: white;
+    width: 7px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+::-webkit-scrollbar-thumb{
+    background: #3e3e3e;
+    border-radius: 4px;
+}
+
+#All{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+#All .left{
+    width: 45%;
+    height: 100vh;
+    background: url(../Imagens/Capas/Capa_pagina_login.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 320px;
+}
+#All .right{
+    width: 55%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.caixa_de_texto{
+    width: 90%;
+}
+.caixa_de_texto h2{
+    color: #3e3e3e;
+    font-size: 2.2rem;
+}
+.caixa_de_texto h2 span{
+    color: #ea1d;
+    font-family: Segoe Print;
+}
+.caixa_de_texto p{
+    color: #3e3e3e;
+    line-height: 1.5;
+    padding: 15px 0px;
+}
+.caixa_de_texto button{
+    border: none;
+    outline: none;
+    color: #3e3e3e;
+    border-radius: 50px;
+    padding: 15px 45px;
+    background: #f5f5f5;
+    transition: all .2s;
+}
+.caixa_de_texto button i{
+    margin-right: 7px;
+    color: #3e3e3e;
+    transition: all .2s;
+}
+.caixa_de_texto button:hover{
+    background: #ea1;
+    color: white;
+    transform: scale(1.03);
+}
+.caixa_de_texto button:hover i{
+    color: white;
+}
+.caixa_de_formulario{
+    width: 90%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caixa_de_formulario > button{
+    width: 22px;
+    height: 22px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: #f5f5f5;
+    color: #3e3e3e;
+    transition: all .2s;
+}
+.caixa_de_formulario > button:hover{
+    background: #3e3e3e;
+    color: white;
+}
+.caixa_de_formulario form{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.caixa_de_formulario form legend{
+    color: #3e3e3e;
+    font-size: 1.5rem;
+}
+.caixa_de_formulario form legend span{
+    border-bottom: 3px solid #ea1;
+    color: #3e3e3e;
+}
+.caixa_de_formulario form .pass{
+    width: 100%;
+    height: 85%;  
+    position: relative;
+    overflow: hidden;
+}
+.caixa_de_formulario form .pass ul{
+    height: 85%;
+    list-style: none;
+    display: flex;
+    position: absolute;
+}
+.caixa_de_formulario form .pass ul li{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.caixa_de_formulario form .pass ul li .Caixa_de_dicaas_ao_criar_conta{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+.caixa_de_formulario form .pass ul li .Caixa_de_dicaas_ao_criar_conta strong{
+    color: #3e3e3e;
+    text-align: center;
+}
+.caixa_de_formulario form .pass ul li .Caixa_de_dicaas_ao_criar_conta p{
+    color: #3e3e3e;
+    text-align: center;
+    line-height: 1.3;
+}
+.caixa_de_formulario form .pass ul li .Caixa_de_genero{
+    width: 100%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.caixa_de_formulario form .pass ul li .Caixa_de_genero label{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    color: #3e3e3e;
+    border-radius: 4px;
+    padding: 0px 7px;
+
+}
+.caixa_de_formulario form .pass ul li .Caixa_de_genero label input{
+    margin-right: 6px;
+}
+.caixas_inputs_label{
+    width: 240px;
+    height: 42px;
+    position: relative;
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+.caixas_inputs_label input{
+    border: none;
+    outline: none;
+    padding: 0px 12px;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: transparent;
+    z-index: 1;
+    color: #3e3e3e;
+    border-radius: 4px;
+}
+.caixas_inputs_label label{
+    position: absolute;
+    padding: 2px 6px;
+    border-radius: 2px;
+    top: 50%;
+    left: 10px;
+    color: #8e8e8e;
+    font-size: 14px;
+    transition: .3s;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+.caixas_inputs_label input:focus{
+    border: 1px solid #ea1d;
+    border-radius: 4px;
+}
+.caixas_inputs_label input:focus ~ label{
+    top: 0;
+    color: #ea1d;
+    font-size: 12px;
+    background: white;
+    z-index: 1;
+}
+.caixas_inputs_label input:valid ~ label{
+    top: 0;
+    font-size: 12px;
+    background: white;
+    z-index: 1;
+}
+.caixa_de_btn_criar_conta{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caixa_de_btn_criar_conta button{
+    border: none;
+    outline: none;
+    padding: 14px 45px;
+    border-radius: 50px;
+    color: white;
+    background: #ea1;
+    transition: all .2s;
+}
+.caixa_de_btn_criar_conta button:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+#Sombra_local_login{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: transparent;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 100;
+}
+#Sombra_local_login .right_login{
+    width: 55%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX( 100% );
+    transition: all .2s;
+
+}
+#Sombra_local_login .right_login .caixa_de_texto{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+

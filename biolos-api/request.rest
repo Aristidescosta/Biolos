@@ -1,0 +1,7 @@
+Post http://localhost:3000
+Content-Type: application/json
+
+{
+    "name":"Aristides",
+    "email": "aristidescosta200@gmail.com"
+}

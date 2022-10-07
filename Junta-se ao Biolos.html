@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Junta - se ao Biolos</title>
+    <link rel="stylesheet" href="Css/Entrada.css">
+    <link rel="stylesheet" href="Icones/bootstrap-icons.css">
+</head>
+<body>
+    <div id="All">
+        <div class="left"></div>
+        <div class="right">
+            <div class="caixa_de_texto">
+                <h2>Junta - se ao <span>Biolos</span></h2>
+                <p>
+                    Lorem ipsum dolor sit, 
+                    <br>amet consectetur adipisicing 
+                    <br>elit. Facere perferendis sapiente.
+                </p>
+                <button onclick=" Abrir_Local_de_pesquisa_geral( '#Sombra_local_login' , '.right_login' )" >
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    <span>Já tens uma conta</span>
+                </button>
+            </div>
+            <div class="caixa_de_formulario">
+                <button onclick="slideShow_caixa_anterior( '.A_ul_de_criar_conta' , '.As_li_de_criar_conta' , '352' )">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+
+                <form action="#">
+                    <legend>Cria sua <span>conta</span></legend>
+                    <div class="pass">
+                        <ul class="A_ul_de_criar_conta">
+                            <li id="primeira_caixa" class="As_li_de_criar_conta">
+
+                                <div class="caixas_inputs_label">
+                                    <input type="text" required id="Input_nome">
+                                    <label id="Label_nome">Nome próprio</label>
+                                </div>
+                                <div class="caixas_inputs_label">
+                                    <input type="text" required id="Input_apelido">
+                                    <label id="Label_apelido">Apelido</label>
+                                </div>
+                                
+                            </li>
+                            <li class="As_li_de_criar_conta">
+
+                                <div class="Caixa_de_dicaas_ao_criar_conta">
+                                    <strong>Insere o teu número de telefone</strong>
+                                    <p>Adiciona o número de telemóvel que pode ser usado para te contactar !</p>
+                                </div>
+
+                                <div class="caixas_inputs_label">
+                                    <input type="number" required id="Input_numero">
+                                    <label id="label_numero">Numero</label>
+                                </div>
+
+                            </li>
+                            <li class="As_li_de_criar_conta">
+
+                                <div class="Caixa_de_dicaas_ao_criar_conta">
+                                    <strong>Género</strong>
+                                    <p>Mais tarde , pode alterar quem vê o teu género no teu perfil</p>
+                                </div>
+
+                                <div class="Caixa_de_genero">
+                                    <label>
+                                        <input type="radio" name="sexo" value="masc" id="masc">
+                                        Masculino
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="sexo" value="femi" id="femi">
+                                        Feminino
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="sexo" checked value="priv" id="priv">
+                                        Privado
+                                    </label>
+                                </div>
+
+                            </li>
+                            <li class="As_li_de_criar_conta">
+                                <div class="Caixa_de_dicaas_ao_criar_conta">
+                                    <strong>Crie uma palavra-passe</strong>
+                                    <p>Crie uma palavra-passe com, pelo menos, 6 caracteres .Deve ser algo que as outras pessoas não consigam adivinhar.</p>
+                                </div>
+
+                                <div class="caixas_inputs_label">
+                                    <input type="password" required id="Input_palavra_Pass">
+                                    <label id="label_Palavra_Pass">Palavra passe</label>
+                                </div>
+                            </li>
+                            <li id="ultima_caixa" class="As_li_de_criar_conta">
+                                <div class="Caixa_de_dicaas_ao_criar_conta">
+                                    <strong>Confirma a palavra-passe</strong>
+                                    <p>Confirma a palavra passe que acabou de criar</p>
+                                </div>
+
+                                <div class="caixas_inputs_label">
+                                    <input type="password" required id="Input_Confirm_palavra_Pass">
+                                    <label id="label_Confirm_Palavra_Pass">Confirma a palavra passe</label>
+                                </div>
+
+                                <div class="caixa_de_btn_criar_conta">
+                                    <button id="btn_criar_conta" type="submit" onclick="criarConta()">Criar conta</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+                
+                <button onclick="slideShow_proxima_caixa( '.A_ul_de_criar_conta' , '.As_li_de_criar_conta' , '352' )">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div id="Sombra_local_login">
+            <div class="right_login">
+                <div class="caixa_de_texto">
+                    <h2>Bem vindo de volta ao <br><span>Biolos</span></h2>
+                    <p>
+                        Lorem ipsum dolor sit, 
+                        <br>amet consectetur adipisicing 
+                        <br>elit. Facere perferendis sapiente.
+                    </p>
+                    <button onclick="Fechar_Local_de_pesquisa_geral( '#Sombra_local_login' , '.right_login' )" >
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        <span>Criar conta !</span>
+                    </button>
+                </div>
+
+                <div class="caixa_de_formulario">
+
+                    <form action="#">
+                        <legend>Iniciando a <span>sessão</span></legend>
+                        <div class="pass">
+                            <ul class="A_ul_de_criar_conta">
+                                <li>
+
+                                    <div class="caixas_inputs_label">
+                                        <input type="number" required id="Input_Numero_login">
+                                        <label id="Label_Numero_login">Numero</label>
+                                    </div>
+                                    <div class="caixas_inputs_label">
+                                        <input type="password" required id="Input_Palavra_pass_login">
+                                        <label id="Label_Palavra_pass_login">Palavra pass</label>
+                                    </div>
+                                    <div class="caixa_de_btn_criar_conta">
+                                        <button type="submit" onclick="login()">Iniciar sessão</button>
+                                    </div>
+                                </li>
+                                
+                                
+                            </ul>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="Js/appOpens.js"></script>
+    <script src="Js/appLogin.js"></script>
+    <script src="Js/appActions.js"></script>
+    <script src="Js/appCriarConta.js"></script>
+</body>
+</html>
